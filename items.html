@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Items</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .contenedor {
+        background-color: #cccccc;
+        padding: 10px;
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .elemento {
+        background-color: #f1425d;
+        padding: 30px;
+        margin: 30px;
+        color: #ffffff;
+        font-size: 40px;
+      }
+      .e-1 {
+        align-self: auto;
+      }
+      .e-2 {
+        align-self: stretch;
+      }
+      .e-3 {
+        align-self: flex-start;
+      }
+      .e-4 {
+        align-self: flex-end;
+      }
+      .e-5 {
+        align-self: center;
+        flex-grow: 1;
+      }
+      .e-6 {
+        align-self: baseline;
+        order: -1;
+        flex-shrink: 1;
+        flex-basis: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="elemento e-1">1</div>
+      <div class="elemento e-2">2</div>
+      <div class="elemento e-3">3</div>
+      <div class="elemento e-4">4</div>
+      <div class="elemento e-5">5</div>
+      <div class="elemento e-6">6</div>
+    </div>
+  </body>
+</html>
